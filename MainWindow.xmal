@@ -1,0 +1,29 @@
+<Window x:Class="AutoClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SOPAC" Height="200" Width="300" ResizeMode="CanMinimize" WindowStartupLocation="CenterOwner">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Name="HotkeyLabel" Text="Current Hotkey: Ctrl+Z" FontSize="16" 
+                   VerticalAlignment="Center" Margin="0,0,0,10" Grid.Row="0"/>
+
+        <Button Name="SetHotkeyButton" Content="Click to Set Hotkey" FontSize="14"
+                Click="SetHotkeyButton_Click" Margin="0,0,0,10" Grid.Row="1"/>
+
+        <TextBlock Name="StatusLabel" Text="Status: Stopped" FontSize="14" 
+                   VerticalAlignment="Center" Grid.Row="2"/>
+
+        <Button Name="ExitButton" Content="Exit" Width="100" Height="30"
+                Click="ExitButton_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                Grid.Row="3" Margin="0,10,0,0"/>
+
+        <TextBlock Text="Made by Ozzy" FontSize="12" 
+                   VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.Row="3" RenderTransformOrigin="0.533,1.345" Height="15"/>
+    </Grid>
+</Window>
