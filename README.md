@@ -6,5 +6,5 @@ SOPAC               -        OPAC
 
 - 1400+ CPS                  - 50+ CPS
 - OPEN SOURCE                - CLOSED SOURCE
-- User friendly              - Complicated UI
+- BAD UI                     - USER FRIENDLY UI
 - HAS SAFETY ("esc")                - NO SAFETY
